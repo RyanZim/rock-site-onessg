@@ -1,5 +1,5 @@
 {
-  "name": "{{{ name }}}",
+  "name": "{{name}}",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -14,7 +14,7 @@
     "build:js": "browserify src/js/*.js | uglifyjs -c -m -o dist/js/bundle.js",
     "watch:js": "onchange 'src/js/*' -- npm run build:js",
     "build:img": "imagemin 'src/img/*' -o dist/img",
-    "watch:img": "onchange 'src/img/*' -- imagemin {{changed}} -o dist/img",
+    "watch:img": "onchange 'src/img/*' -- imagemin {{-literal}}changed}} -o dist/img",
     "watch:serve": "http-server dist -o",
     "clean": "rm -rf dist && mkdir -p dist/js"
   },
