@@ -28,7 +28,7 @@
     "onessg": "^1.0.0",
     "postcss-cli": "^2.6.0",
     "postcss-cssnext": "^2.7.0",
-    "postcss-import": "^8.1.2",
+    "postcss-import": "^9.0.0",
     "postcss-url": "^5.1.2",
     "script-runner": "^0.1.5",
     "uglifyjs": "^2.4.10"
