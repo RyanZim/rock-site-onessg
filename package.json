@@ -16,12 +16,15 @@
     "build:img": "imagemin 'src/img/*' -o dist/img",
     "watch:img": "onchange 'src/img/*' -- imagemin {{-literal}}changed}} -o dist/img",
     "watch:serve": "http-server dist -o",
-    "clean": "rm -rf dist && mkdir -p dist/js"
+    "clean": "rm -rf dist && mkdir -p dist/js",
+    "lint": "eslint ."
   },
   "devDependencies": {
     "browserify": "^13.1.0",
     "cssnano": "^3.7.4",
     "ejs": "^2.5.1",
+    "eslint": "^3.12.2",
+    "eslint-config-ryanzim": "0.0.1",
     "http-server": "^0.9.0",
     "imagemin-cli": "^3.0.0",
     "onchange": "^3.0.0",
